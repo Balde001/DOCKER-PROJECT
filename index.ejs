@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <div class="table-data">
+    <table border="1">
+        <% print.forEach(function (personnage) { %>
+
+            <div class="col-4">
+
+                <div class="card justify-content-center">
+
+                    <div class="card-header">
+
+                        <h4>
+
+                           NOM: <%=personnage.name %>
+
+                        </h4>
+
+                    </div>
+
+                    <img id="card_imgId" src="<%= personnage.photo %>" class="card-img-top" alt="img">
+
+                    <div class="card-body">
+
+                        <h3>
+
+                           CHARACTERISTICS: <%= personnage.characteristics%>
+
+                        </h3>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <br>
+
+            <% }) %>
+    </table>
+    </div>
+</body>
+</html>

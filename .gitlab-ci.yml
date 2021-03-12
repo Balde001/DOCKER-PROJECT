@@ -1,0 +1,6 @@
+image: nodebd
+
+services: 
+  - nodebd:dind
+build:
+  script:
